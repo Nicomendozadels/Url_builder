@@ -55,7 +55,6 @@
            Here are your results!<b><i>  Click on the tagged URLs so you can easily copied them.</i></b></p>
 			<?php $tags=$_POST['tags']; 
 				echo implode(", ", $tags);
-
 			?>
        </div>
      </div>
