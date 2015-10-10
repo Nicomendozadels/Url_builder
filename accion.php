@@ -52,20 +52,59 @@
      <div class="row">
        <div class="col s12">
          <p class="float">
-           Here are your results!<b><i>Click on the tagged URLs so you can easily copied them.</i></b></p>
+           Here are your results!<b><i>  Click on the tagged URLs so you can easily copied them.</i></b></p>
+			<?php $tags=$_POST['tags']; 
+				echo implode(", ", $tags);
+			?>
        </div>
      </div>
     <div class="row">
-      <div class="col s12 hoverable"> <h5 class="left-align">http://www.smartec.la/...</h5> </div>
+      <div class="col s12 hoverable"> <h5 class="left-align"><?php echo htmlspecialchars($_POST['url']); ?>...</h5> </div>
     </div>
 <!--Inicio de Colección de resultados-->
-      <div class="collection">
-          <a class="collection-item center-align" href="#!" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=rhs&utm_campaign=products</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=rhs&utm_campaign=interaction</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=up&utm_campaign=products</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=up&utm_campaign=interaction</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=post&utm_campaign=products</i></a>
-      </div>
+      <table class="hoverable centered responsive-table">
+        <thead>
+          <tr>
+              <th data-field="URL">SOURCE-MEDIUM-CAMPAIGN</th>
+              <th data-field="URL">TAGGED URLs (Click to copy)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">facebook - rhs - products</a>
+            </td>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">
+            <i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=rhs&utm_campaign=products</i>
+            </a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">facebook - rhs - interaction</a>
+            </td>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">
+            <i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=rhs&utm_campaign=interaction</i>
+            </a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">facebook - up - interaction</a>
+            </td>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">
+            <i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=up&utm_campaign=interaction</i>
+            </a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">facebook - up - products</a>
+            </td>
+            <td><a href="#!" onclick="Materialize.toast('URL Copied!', 800)" title="Click to Copy">
+            <i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=up&utm_campaign=products</i>
+            </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
       <div class="row"> <div class="col s12 right-align">
       <a href="index.php" class="waves-effect waves-light btn-large right-align blue darken-1" type="submit" name="action">&#8592; Go Back</a>
       </div>
@@ -78,7 +117,7 @@
         <footer class="page-footer white">
             <div class="container">
             © 2015 Copyright - Made with love by <a href="https://twitter.com/NicoMendozadelS" target="_blank"> @NicomendozadelS </a>
-            <a class="right" href="http://www.github.com" target="_blank">Help me improve the code!</a>
+            <a class="right" href="https://github.com/Nicomendozadels/Url_builder" target="_blank">Help me improve the code!</a>
             </div>
         </footer>
 <!--fin del footer-->

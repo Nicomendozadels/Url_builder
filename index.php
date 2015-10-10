@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <!---
@@ -21,6 +20,8 @@
     ├──────────┼───────────────────────────────┤
     │ Location │ Lima, Perú                    │
     ╰──────────┴───────────────────────────────╯
+
+    Colaboración: @martinmds
 -->
 <head>
     <meta charset="utf-8">
@@ -34,51 +35,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="http://cdn2.hubspot.net/hub/310443/file-519647983-png/favicon-smarttec.png?t=1441053799411">
 
-
-
 </head>
 <body>
 <div class="wrapper">
-    <header>
-     <div class="row">
-       <div class="col s12">
-         <h3 class="center-align">URL Builder PRO for marketers</h3>
-         <h6 class="center-align">Powered by <a href="http://www.smartec.la">Smartec.la</a></h6>
-       </div>
+   <div class="row">
+     <div class="col s12">
+       <h3 class="center-align">URL Builder PRO for marketers</h3>
+       <h6 class="center-align">Powered by <a href="http://www.smartec.la">Smartec.la</a></h6>
      </div>
-     </header>
+   </div>
 <!--Inicio de contenedor principal-->
-   <main class="container">
+   <div class="container">
+<!--Inicio de contenedor de texto-->
      <div class="row">
        <div class="col s12">
          <p class="float">
-           Here are your results!<b><i>Click on the tagged URLs so you can easily copied them.</i></b></p>
+           As marketers, <b><i>we have to create lots of trackable URL´s for each source and medium of
+           our campaigns.</i></b> Sometimes can be a pain in the ass if you have to create them massively. <br><br>
+           URL Builder PRO is a tool that <b><i>helps you create easily massive trackable URLS
+           for your campaigns.</i></b> Just fill out this form :D <br><br>
+           In the "Source-medium-name" field, create a tag for the parameters you want to generate in the URL.
+           Example:Facebook-RHS-example. This wil create a trackable URL where Facebook is the source,
+           RHS is the medium and example is the name of the campaign.
+         </p>
        </div>
      </div>
-    <div class="row">
-      <div class="col s12 hoverable"> <h5 class="left-align">http://www.smartec.la/...</h5> </div>
+<!--Fin de contenedor de texto-->
+<!--Inicio de formulario-->
+   <div class="row">
+    
+ 
+
+
+       <form class="col s12" action="accion.php" method="post">
+         <div class="row">
+           <div class="input-field col s12">
+             <input placeholder="URL del sitio web*" value="http://" type="text" class="validate" name="url" required>
+             <label for="URL"> YOUR DOMAIN - URL* </label>
+           </div>
+           <div class="input-field col s12">
+             <input placeholder="" type="text" class="validate" required data-role="materialtags" name="tags">
+             <label for="Fuente de campaña">SOURCE-MEDIUM-NAME* (USE TAB OR RIGHT CLICK TO SEPARATE THE TAGS) </label>
+           </div>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <div class="center">
+           <a href="resultados2.html" class="waves-effect waves-light btn-large center-align #0d47a1 blue darken-1" type="submit" name="action"> Create URLs</a>
+           </div>
+           <div class="right-align">
+           <label>
+             *Required fields
+           </label>
+           </div>
+          <p><input type="submit" /></p>
+       </form>
     </div>
-<!--Inicio de Colección de resultados-->
-      <div class="collection">
-          <a class="collection-item center-align" href="#!" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=rhs&utm_campaign=products</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=rhs&utm_campaign=interaction</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=up&utm_campaign=products</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=up&utm_campaign=interaction</i></a>
-          <a href="#!" class="collection-item center-align" onclick="Materialize.toast('Copied!', 800)" title="Click to Copy"><i class="blue-text text-darken-1">.../utm_source=facebook&utm_medium=post&utm_campaign=products</i></a>
-      </div>
-      <div class="row"> <div class="col s12 right-align">
-      <a href="index.php" class="waves-effect waves-light btn-large right-align blue darken-1" type="submit" name="action">&#8592; Go Back</a>
-      </div>
-      </div>
-<!--Fin de Colección de resultados-->
-  </div>
-  </main>
-<!--Fin del contenedor principal-->
+   </div>
+<!--Fin de formulario-->
+   </div>
+<!--Fin de contenedor principal-->
 <!--Inicio del footer-->
         <footer class="page-footer white">
             <div class="container">
             © 2015 Copyright - Made with love by <a href="https://twitter.com/NicoMendozadelS" target="_blank"> @NicomendozadelS </a>
-            <a class="right" href="http://www.github.com" target="_blank">Help me improve the code!</a>
+            <a class="right" href="https://github.com/Nicomendozadels/Url_builder" target="_blank">Help me improve the code!</a>
             </div>
         </footer>
 <!--fin del footer-->
